@@ -1,3 +1,4 @@
+//http://www.oschina.net/news/71901/code-snippet-great
 #include <stdlib.h>
 #include <math.h>
 #include <stdio.h>
