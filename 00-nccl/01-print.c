@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int global = 200;
-//extern  _start;
+//extern int  _start;
 
 int main(void)
 {

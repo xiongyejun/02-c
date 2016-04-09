@@ -1,4 +1,4 @@
-//http://blog.csdn.net/wallwind/article/details/7528474
+//http://blog.sina.com.cn/s/blog_626b7339010161tr.html
 #include <fcntl.h>		// 提供open()函数
 #include <unistd.h>
 #include <stdio.h>
