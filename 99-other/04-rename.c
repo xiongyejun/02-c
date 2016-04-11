@@ -93,8 +93,9 @@ int main(void)
 {
 	char *dir; // = "/Users/xiongyejun/01-GitHub/02-c";
 	getcwd(dir,80);
+	
 	scan_dir(dir);
-	printf("%d files rename over.\n", count);
+	printf("%s:%d files rename over.\n", dir, count);
 	return 0;
 }
 
