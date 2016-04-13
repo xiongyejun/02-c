@@ -14,14 +14,12 @@
 int str_split(char * src, char * delim, char * des[])
 {
 	char * find_pos;
-	int count = 0;
 	int des_count = 0;
 	int str_len = strlen(delim);
 
 	find_pos = strstr(src, delim);		//查找第一个dilim在src中的指针位置
 	while (find_pos)
 	{
-		count++;
 		des[des_count++] = src;	
 		src = find_pos;					//src向后移到find_pos位置
 		memset(src, '\0', str_len);		//将dilim替换为'\0'
@@ -31,7 +29,7 @@ int str_split(char * src, char * delim, char * des[])
 	
 	des[des_count] = src;				//最后一个放入数组
 	
-	return count;
+	return des_count;
 }
 
 int main(void)

@@ -1,6 +1,5 @@
 // 修改当前文件夹下文件的名称，仅是删除文件名中部分特殊字符
 #include <fcntl.h>		// 提供open()函数
-#include <unistd.h>
 #include <stdio.h>
 #include <dirent.h>		// 提供目录流操作函数
 #include <string.h>
