@@ -14,7 +14,6 @@
 	a = temp;		\
 }
 
-char * file[20];
 int count = 0;
 char buf[100];
 
