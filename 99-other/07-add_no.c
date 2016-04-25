@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <dirent.h>
-#include <stdlib.h>
 
 #define SWAP(a, b)	\
 {					\
@@ -17,24 +16,18 @@
 int count = 0;
 char buf[100];
 
-//  将序号更改为 01-mv样式
+//  将序号更改为 01-样式
 void itoa(int num)
 {
 	int i = 0;
 	int j = 0;
 
-	buf[i++] = 'v';
-	buf[i++] = 'm';
 	buf[i++] = '-';
-	do
+	for (j = 0; j < 2; i++, j++)
 	{
 		buf[i] = num % 10 + '0';
-		i++;
 		num /= 10;
-	} while (num != 0);
-	
-	if (4 == i)
-		buf[i++] = '0';	// 小于10的数前面加0
+	}
 
 	buf[i] = '\0';
 
@@ -81,13 +74,16 @@ void scan_dir(char *dir, char * p_suffix[])
 			char * new;
 			new = entry->d_name;
 			if (entry->d_name[0] >= 48 && entry->d_name[0] <= 57 && entry->d_name[1] >= 48 && entry->d_name[1] <= 57 && entry->d_name[2] == '-')
-				new+=5;	// 01-mv
+				new+=3;	// 01-
 
 			itoa(count);
 			strcat(buf, new);
 			
-			if(0 == rename(entry->d_name, buf))		
+			if (strcmp(entry->d_name, buf) != 0)
+			{
+				if(0 == rename(entry->d_name, buf))		
 				printf("rename:old=%s --> new=%s\n", entry->d_name, buf);
+			}
 		}
 	}
 	chdir("..");
