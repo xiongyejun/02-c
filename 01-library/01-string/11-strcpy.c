@@ -1,5 +1,6 @@
 // char * strcpy(char * des, const char * src)
 // copy string
+// including the terminating null character 
 //
 #include <stdio.h>
 #include <string.h>
