@@ -35,7 +35,7 @@ int main(void)
 	size = strlen(str);
 	printf("size = %d\n", size);
 
-	setlocale(LC_ALL, "chinese-simplified");
+	setlocale(LC_ALL, "zh_CN");
 	size = mblen(str, MB_CUR_MAX);
 	printf("size = %d\n", size);
 	
