@@ -1,5 +1,5 @@
 // P25,练习1-21
-// 用最少的制表符和空格替换一串空格
+// 用最少的制表符和空格(空格用-表示)替换一串空格
 #include <stdio.h>
 
 #define N_TAB		8	 // 制表符终止位
@@ -53,7 +53,7 @@ int main(void)
 			for(i = 0; i < p_tab; i++)
 				putchar('\t');
 			for(i = 0; i < p_space; i++)
-				putchar(' ');
+				putchar('-');
 
 			c_count+=n_space;
 			n_space = 0;

@@ -1,5 +1,5 @@
 // P25,练习1-20
-// 用适当的空格替换制表符
+// 用适当的空格(为了能看见，这里用-表示)替换制表符
 #include <stdio.h>
 
 #define N_TAB		8	 // 制表符终止位
@@ -18,7 +18,7 @@ int main(void)
 		{
 			n_space = N_TAB - (c_count % N_TAB);
 			for(i = 0; i < n_space; i++, c_count++)
-				putchar(' ');
+				putchar('-');
 		}
 		else if('\n' == c)
 		{
