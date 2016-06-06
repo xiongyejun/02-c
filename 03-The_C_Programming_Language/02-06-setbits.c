@@ -3,6 +3,13 @@
 #include <stdio.h>
 #include <limits.h>
 
+// 抄的的答案
+unsigned setbits_ans(unsigned x, int p, int n, unsigned y)
+{
+	return (x & ((~0 << (p+1)) | (~(~0 << (p+1-n))))) | ((y & ~(~0 << n)) << (p+1-n));
+}
+
+//  理解错了p，p应该是从右边数，这里做的是p从左边数
 int setbits(int x, int p, int n, int y)
 {
 	int int_len;
