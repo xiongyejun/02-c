@@ -1,4 +1,4 @@
-##The C Programming Language
+#The C Programming Language
 
 2016年06月01日，在亚马逊买了一本
 
@@ -10,4 +10,4 @@
 
 ：中间##-代表练习的序号（如果有#.#的是章节里的代码） 
 
-#代码中带后缀-ans的是网上找的答案
+##代码中带后缀-ans的是网上找的答案
