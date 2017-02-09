@@ -17,9 +17,12 @@ int main()
 	L->Next = NULL;
 	L->Element = -1;
 
-	printf("hehe\n");
-	
 	initList(L);
+	printf("print list:\n");
+	PrintList(L);
+
+	return 0;
+
 	printf("input a num:");
 	scanf("%d", &X);
 
@@ -47,6 +50,18 @@ void initList(List L)
 		Tmp->Next = NULL;
 		P->Next = Tmp;
 		P = Tmp;
+	}
+}
+
+void PrintList(List L)
+{
+	Position Tmp;
+
+	Tmp = L->Next;
+	while(Tmp != NULL)
+	{
+		printf("%d\n", Tmp->Element);
+		Tmp = Tmp->Next;
 	}
 }
 
