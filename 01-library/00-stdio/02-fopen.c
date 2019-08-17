@@ -9,7 +9,7 @@ int main(void)
 	pf = fopen("myfile.txt", "w");
 	if(pf != NULL)
 	{
-		fputs("fopen example", pf);
+		fputs("fopen example\n", pf);
 		fclose(pf);
 	}
 	return 0;

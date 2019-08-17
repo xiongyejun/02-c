@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int global = 2;
 
 int main(void)

@@ -1,0 +1,55 @@
+word = <#>, input = 1, state = 1
+word = <define>, input = 2, state = 2
+word = < >, input = 0, state = 3
+word = <MAX>, input = 3, state = 4
+name = MAX
+word = <	>, input = 0, state = 5
+word = <	>, input = 0, state = 5
+word = <	>, input = 0, state = 5
+word = <1>, input = 3, state = 6
+word = <0>, input = 3, state = 6
+word = <0>, input = 3, state = 6
+value = 100
+word = <
+>, input = 4, state = 0
+word = <#>, input = 1, state = 1
+word = <define>, input = 2, state = 2
+word = < >, input = 0, state = 3
+word = <MIN>, input = 3, state = 4
+name = MIN
+word = <	>, input = 0, state = 5
+word = <	>, input = 0, state = 5
+word = <	>, input = 0, state = 5
+word = <1>, input = 3, state = 6
+value = 1
+word = <
+>, input = 4, state = 0
+word = <
+>, input = 4, state = 0
+word = <int>, input = 3, state = 0
+word = < >, input = 0, state = 0
+word = <main>, input = 3, state = 0
+word = <(>, input = 3, state = 0
+word = <void>, input = 3, state = 0
+word = <)>, input = 3, state = 0
+word = <
+>, input = 4, state = 0
+word = <{>, input = 3, state = 0
+word = <
+>, input = 4, state = 0
+word = <	>, input = 0, state = 0
+word = <return>, input = 3, state = 0
+word = < >, input = 0, state = 0
+word = <MAX>, input = 3, state = 0
+word = < >, input = 0, state = 0
+word = <+>, input = 3, state = 0
+word = < >, input = 0, state = 0
+word = <MIN>, input = 3, state = 0
+word = <;>, input = 3, state = 0
+word = <
+>, input = 4, state = 0
+word = <}>, input = 3, state = 0
+word = <
+>, input = 4, state = 0
+word = <
+>, input = 4, state = 0
